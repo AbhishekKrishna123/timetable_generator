@@ -1,0 +1,648 @@
+<!-- HTML template to generate timetable based on input parameters -->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="timetable.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    </head>
+    <!-- <button id="link" download="Timetable.jpg" onclick="download()">Download Image</button> -->
+    <!-- <h1>Save the image below</h1> -->
+    <body>
+        <section id="timetable">
+            <div id="outerBorder">
+                <div id="headerRow">
+                    <div id="leftHeader">
+                        <div>
+                            <div>RV College of Engineering</div>
+                            <div id="department">Department of Computer Science and Engineering</div>
+                        </div>
+                    </div>
+                    <div id="centerHeader">
+                        <div id="timetableContainer">Timetable</div>
+                        <div id="sectionContainer">'<span id="section">A</span>' Section</div>
+                    </div>
+                    <div id="rightHeader">
+                        <div>
+                            <div id="semester">Semester IV</div>
+                            <div>2017 - 2018</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="table">
+                    <!-- Times at the top  -->
+                    <div class="timeContainer" id="time1"><span class="textContainer">09:00 - 10:00</span></div>
+                    <div class="timeContainer" id="time2"><span class="textContainer">10:00 - 11:00</span></div>
+                    <div class="timeContainer" id="time3"><span class="textContainer">11:00 - 11:30</span></div>
+                    <div class="timeContainer" id="time4"><span class="textContainer">11:30 - 12:00</span></div>
+                    <div class="timeContainer" id="time5"><span class="textContainer">11:30 - 12:30</span></div>
+                    <div class="timeContainer" id="time6"><span class="textContainer">12:00 - 01:00</span></div>
+                    <div class="timeContainer" id="time7"><span class="textContainer">12:30 - 1:30</span></div>
+                    <div class="timeContainer" id="time8"><span class="textContainer">01:00 - 02:00</span></div>
+                    <div class="timeContainer" id="time9"><span class="textContainer">01:30 - 02:15</span></div>
+                    <div class="timeContainer" id="time10"><span class="textContainer">02:00 - 02:45</span></div>
+                    <div class="timeContainer" id="time11"><span class="textContainer">02:15 - 03:15</span></div>
+                    <div class="timeContainer" id="time12"><span class="textContainer">02:45 - 03:45</span></div>
+                    <div class="timeContainer" id="time13"><span class="textContainer">03:15 - 04:15</span></div>
+                    <div class="timeContainer" id="time14"><span class="textContainer">03:45 - 04:45</span></div>
+
+                    <!-- Left column  -->
+                    <div class="dayContainer" id="day1"><span class="textContainer">Monday</span></div>
+                    <div class="dayContainer" id="day2"><span class="textContainer">Tuesday</span></div>
+                    <div class="dayContainer" id="day3"><span class="textContainer">Wednesday</span></div>
+                    <div class="dayContainer" id="day4"><span class="textContainer">Thursday</span></div>
+                    <div class="dayContainer" id="day5"><span class="textContainer">Friday</span></div>
+
+                    <div class="lineBG">
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="triangleContainer" id="triangle1"><span class="textContainer">Time</span></div>
+                    <div class="triangleContainer" id="triangle2"><span class="textContainer">Day</span></div>
+
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                    <div class="blankContainer"><span class="textContainer"></span></div>
+                </div>
+
+                <div id="footerRow">
+                    <!-- <div class="footerSubject">
+                        <div class="footerSubjectCode">DLD</div>
+                        <div class="footerSubjectName">Digital Logic and Design</div>
+                    </div>
+                    <div class="footerSubject">
+                        <div class="footerSubjectCode">MPMC</div>
+                        <div class="footerSubjectName">Microprocessors & Microcontrollers</div>
+                    </div>
+                    <div class="footerSubject">
+                        <div class="footerSubjectCode">DBMS</div>
+                        <div class="footerSubjectName">Database Management Systems</div>
+                    </div>
+                    <div class="footerSubject">
+                        <div class="footerSubjectCode">COA</div>
+                        <div class="footerSubjectName">Computer Organization and Architecture</div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+
+
+        <script
+        src="./jquery-3.2.1.min.js"></script>
+
+        <script src="./html2canvas.min.js"></script>
+
+        <script>
+
+            // Generate unique IDs for each box from 1-70 (14 boxes for each row)
+            $(".blankContainer").each(function(i, elem) {
+                $(elem).attr("id", "box" + (i+1).toString());
+            });
+
+            // Get the entire data for customizing the template
+            var data = JSON.parse(localStorage.getItem("data"));
+
+            // Set the department
+            $("#department").html(data.selectedDepartment);
+            // Set the semester
+            $("#semester").html("Semester " + data.selectedSemester);
+            // Set the section
+            $("#section").html(data.selectedSection);
+
+            // Add footer
+            data.subjects.forEach(subject => {
+                $("#footerRow").append('' +
+                    '<divclass="footerSubject">' +
+                        '<div class="footerSubjectCode">' + subject.code + '</div>' +
+                        '<div class="footerSubjectName">' + subject.name + '</div>' +
+                    '</div>' +
+                '');
+                console.log("code " + subject.code);
+                //$("body").append("<p>test</p>");
+            });
+
+            console.log(data);
+
+            data.schedule.forEach((day, dayIndex) => {
+
+                //console.log(day);
+
+                // Indicates that the lab for the day has been completed;
+                // The later classes are shifted by half an hour (to the lower row)
+                var labDone = false;
+
+                // Iterate through the 8 slots in a day
+                for (var i = (14 * dayIndex) + 1; i <= (dayIndex + 1) * 14; i++) {
+
+                    //console.log(i);
+
+                    // The current element to be modified
+                    var elem = $("#box" + i);
+
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    // 1st Hour
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    if (i % 14 == 1) {
+
+                        // Make sure slot is not empty
+                        if (day.hour1 == "") {
+                            // Box has to span 4 rows
+                            elem.css({ "grid-row": "span 4" });
+                            continue;
+                        }
+
+                        // Check if this slot is a lab
+                        if (day.hour1.substr(0, 3) == "lab") {
+                            // This is a lab
+
+                            // Find the right lab
+                            data.labs.forEach(lab => {
+
+                                // Found the right lab
+                                if (lab.name == day.hour1) {
+
+                                    // Adjust the box size; span more rows and columns
+                                    elem.css({ "grid-row": "span 4" });
+                                    elem.css({ "grid-column": "span 2" });
+                                    // Hide the boxes that are not required
+                                    $("#box" + (i+1)).css({"display": "none"});
+
+                                    // Create the string to be displayed
+                                    var labStr = data.selectedSection + "1 " + lab.batch1 + "<br>"
+                                                + data.selectedSection + "2 " + lab.batch2 + "<br>"
+                                                + data.selectedSection + "3 " + lab.batch3 + "<br>";
+
+                                    // Set text
+                                    elem.find(".textContainer").html(labStr);
+                                    // Set foreground color
+                                    elem.find(".textContainer").css({ "color": lab.fgcolor });
+                                    // Set font size
+                                    elem.find(".textContainer").css({ "font-size": '32px' });
+                                    // Set background color
+                                    elem.css( { "background-color": lab.bgcolor } );
+                                    // Extra section to highlight 11-11:30
+                                    $("#box" + (i+2)).css({ "background-color": lab.bgcolor });
+
+                                    // The lab for the day is done
+                                    labDone = true;
+                                }
+                            });
+                            // Skip the next lab slot
+                            i++;
+                            // Continue to the next slot after this lab
+                            continue;
+                        }   // End of lab section
+
+                        // If this slot is not a lab
+
+                        // Find the right subject
+                        data.subjects.forEach(subject => {
+
+                            // Found the right one
+                            if (subject.code == day.hour1) {
+                                // The box has to span 4 rows
+                                elem.css({ "grid-row": "span 4" });
+                                // Set the text
+                                elem.find(".textContainer").html(subject.code);
+                                // Set text colour
+                                elem.find(".textContainer").css({ "color": subject.fgcolor });
+                                // Set background colour
+                                elem.css( { "background-color": subject.bgcolor} );
+                            }
+                        });
+                    }
+
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    // 2nd Hour
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    else if (i % 14 == 2) {
+                        // Make sure slot is not empty
+                        if (day.hour2 == "") {
+                            // Box has to span 4 rows
+                            elem.css({ "grid-row": "span 4" });
+                            continue;
+                        }
+
+                        // If this slot is not a lab
+
+                        // Find the right subject
+                        data.subjects.forEach(subject => {
+
+                            // Found the right one
+                            if (subject.code == day.hour2) {
+                                // The box has to span 4 rows
+                                elem.css({ "grid-row": "span 4" });
+                                // Set the text
+                                elem.find(".textContainer").html(subject.code);
+                                // Set text colour
+                                elem.find(".textContainer").css({ "color": subject.fgcolor });
+                                // Set background colour
+                                elem.css( { "background-color": subject.bgcolor} );
+                            }
+                        });
+                    }
+
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    // Tea Break
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    else if (i % 14 == 3) {
+                        if (labDone) {
+                            elem = $("#box" + (parseInt(i)+6));
+                        }
+                        elem.find(".textContainer").html("Tea Break");
+                        elem.css({ "background-color": "#999" });
+                        elem.css({ "grid-row": "span 3" });
+                    }
+
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    // 3rd Hour
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    else if (i % 14 == 4) {
+
+                        if (labDone) {
+                            elem = $("#box" + (parseInt(i)+6));
+                        }
+
+                        // Make sure slot is not empty
+                        if (day.hour3 == "") {
+                            // Box has to span 3 rows
+                            elem.css({ "grid-row": "span 3" });
+                            continue;
+                        }
+
+                        // Check if this slot is a lab
+                        if (day.hour3.substr(0, 3) == "lab") {
+                            // This is a lab
+
+                            // Find the right lab
+                            data.labs.forEach(lab => {
+
+                                // Found the right lab
+                                if (lab.name == day.hour3) {
+
+                                    // Adjust the box size; span more rows and columns
+                                    elem.css({ "grid-row": "span 4" });
+                                    elem.css({ "grid-column": "span 2" });
+                                    // Hide the boxes that are not required
+                                    $("#box" + (i+1)).css({"display": "none"});
+                                    $("#box" + (i+2)).css({"display": "none"});
+                                    $("#box" + (i+3)).css({"display": "none"});
+
+                                    // Hack/Fix to get the grid alignment to work when the lab is in the middle
+                                    $("#box" + (parseInt(i)+4)).insertAfter('#box' + (i+10));
+
+                                    // $( '<div class="blankContainer"><span class="textContainer"></span></div>' ).insertAfter('#box14');
+
+                                    // Create the string to be displayed
+                                    var labStr = data.selectedSection + "1 " + lab.batch1 + "<br>"
+                                                + data.selectedSection + "2 " + lab.batch2 + "<br>"
+                                                + data.selectedSection + "3 " + lab.batch3 + "<br>";
+
+                                    // Set text
+                                    elem.find(".textContainer").html(labStr);
+                                    // Set foreground color
+                                    elem.find(".textContainer").css({ "color": lab.fgcolor });
+                                    // Set font size
+                                    elem.find(".textContainer").css({ "font-size": '32px' });
+                                    // Set background color
+                                    elem.css( { "background-color": lab.bgcolor } );
+
+                                    // The lab for the day is done
+                                    labDone = true;
+                                }
+                            });
+                            // Skip the next lab slot
+                            i++;
+                            // Continue to the next slot after this lab
+                            continue;
+                        }   // End of lab section
+
+                        // If this slot is not a lab
+
+                        // Find the right subject
+                        data.subjects.forEach(subject => {
+
+                            // Found the right one
+                            if (subject.code == day.hour3) {
+                                // The box has to span 4 rows
+                                elem.css({ "grid-row": "span 3" });
+                                // Set the text
+                                elem.find(".textContainer").html(subject.code);
+                                // Set text colour
+                                elem.find(".textContainer").css({ "color": subject.fgcolor });
+                                // Set background colour
+                                elem.css( { "background-color": subject.bgcolor} );
+                            }
+                        });
+
+                    }
+
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    // 4th Hour
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    else if (i % 14 == 5) {
+
+                        if (labDone) {
+                            elem = $("#box" + (parseInt(i)+6));
+                        }
+
+                        // Make sure slot is not empty
+                        if (day.hour4 == "") {
+                            // Box has to span 3 rows
+                            elem.css({ "grid-row": "span 3" });
+                            continue;
+                        }
+
+                        // If this slot is not a lab
+
+                        // Find the right subject
+                        data.subjects.forEach(subject => {
+
+                            // Found the right one
+                            if (subject.code == day.hour4) {
+                                // The box has to span 3 rows
+                                elem.css({ "grid-row": "span 3" });
+                                // Set the text
+                                elem.find(".textContainer").html(subject.code);
+                                // Set text colour
+                                elem.find(".textContainer").css({ "color": subject.fgcolor });
+                                // Set background colour
+                                elem.css( { "background-color": subject.bgcolor} );
+                            }
+                        });
+
+                    }
+
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    // Lunch Break
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    else if (i % 14 == 6) {
+                        if (labDone) {
+                            elem = $("#box" + (parseInt(i)+6));
+                        }
+                        elem.find(".textContainer").html("Lunch Break");
+                        elem.css({ "background-color": "#999" });
+                        elem.css({ "grid-row": "span 3" });
+                    }
+
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    // 5th Hour
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    else if (i % 14 == 7) {
+
+                        if (labDone) {
+                            elem = $("#box" + (parseInt(i)+6));
+                        }
+
+                        // Make sure slot is not empty
+                        if (day.hour5 == "") {
+                            // Box has to span 3 rows
+                            elem.css({ "grid-row": "span 3" });
+                            continue;
+                        }
+
+                        // Check if this slot is a lab
+                        if (day.hour5.substr(0, 3) == "lab") {
+                            // This is a lab
+
+                            // Find the right lab
+                            data.labs.forEach(lab => {
+
+                                // Found the right lab
+                                if (lab.name == day.hour5) {
+
+                                    // Adjust the box size; span more rows and columns
+                                    elem.css({ "grid-row": "span 4" });
+                                    elem.css({ "grid-column": "span 2" });
+                                    // Hide the boxes that are not required
+                                    $("#box" + (i+1)).css({"display": "none"});
+                                    $("#box" + (i+2)).css({"display": "none"});
+                                    $("#box" + (i+3)).css({"display": "none"});
+
+                                    // Create the string to be displayed
+                                    var labStr = data.selectedSection + "1 " + lab.batch1 + "<br>"
+                                                + data.selectedSection + "2 " + lab.batch2 + "<br>"
+                                                + data.selectedSection + "3 " + lab.batch3 + "<br>";
+
+                                    // Set text
+                                    elem.find(".textContainer").html(labStr);
+                                    // Set foreground color
+                                    elem.find(".textContainer").css({ "color": lab.fgcolor });
+                                    // Set font size
+                                    elem.find(".textContainer").css({ "font-size": '32px' });
+                                    // Set background color
+                                    elem.css( { "background-color": lab.bgcolor } );
+
+                                    // The lab for the day is done
+                                    labDone = true;
+                                }
+                            });
+                            // Skip the next lab slot
+                            i++;
+                            // Continue to the next slot after this lab
+                            continue;
+                        }   // End of lab section
+
+                        // If this slot is not a lab
+
+                        // Find the right subject
+                        data.subjects.forEach(subject => {
+
+                            // Found the right one
+                            if (subject.code == day.hour5) {
+                                // The box has to span 4 rows
+                                elem.css({ "grid-row": "span 3" });
+                                // Set the text
+                                elem.find(".textContainer").html(subject.code);
+                                // Set text colour
+                                elem.find(".textContainer").css({ "color": subject.fgcolor });
+                                // Set background colour
+                                elem.css( { "background-color": subject.bgcolor} );
+                            }
+                        });
+
+                        // if (data.schedule[0].hour5 == "lab") {
+                        //     elem.css({ "grid-row": "span 4" });
+                        //     elem.css({ "grid-column": "span 2" });
+                        //     $("#box" + (i+1)).css({"display": "none"});
+                        //     $("#box" + (i+2)).css({"display": "none"});
+                        //     $("#box" + (i+3)).css({"display": "none"});
+                        //     i++;
+                        //     labDone = true;
+                        // }
+                        // else {
+                        //     if (labDone) {
+                        //         elem = $("#box" + (parseInt(i)+6));
+                        //     }
+                        //     elem.find(".textContainer").html(data.schedule[0].hour5);
+                        //     var BG;
+                        //     for (z=0; z<data.numSubjects; z++) {
+                        //         if (data.subjects[z].code == data.schedule[0].hour5) {
+                        //             BG = data.subjects[z].bgcolor;
+                        //         }
+                        //     }
+                        //     elem.css( { "background-color": BG } );
+                        //     elem.css({ "grid-row": "span 3" });
+                        // }
+
+                    }
+
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    // 6th Hour
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////
+                    else if (i % 14 == 8) {
+
+                        if (labDone) {
+                            elem = $("#box" + (parseInt(i)+6));
+                        }
+
+                        // Make sure slot is not empty
+                        if (day.hour6 == "") {
+                            // Box has to span 3 rows
+                            elem.css({ "grid-row": "span 3" });
+                            continue;
+                        }
+
+                        // If this slot is not a lab
+
+                        // Find the right subject
+                        data.subjects.forEach(subject => {
+
+                            // Found the right one
+                            if (subject.code == day.hour6) {
+                                // The box has to span 3 rows
+                                elem.css({ "grid-row": "span 3" });
+                                // Set the text
+                                elem.find(".textContainer").html(subject.code);
+                                // Set text colour
+                                elem.find(".textContainer").css({ "color": subject.fgcolor });
+                                // Set background colour
+                                elem.css( { "background-color": subject.bgcolor} );
+                            }
+                        });
+
+                        // if (labDone) {
+                        //     elem = $("#box" + (parseInt(i)+6));
+                        // }
+                        // elem.find(".textContainer").html(data.schedule[0].hour6);
+                        // var BG;
+                        // for (z=0; z<data.numSubjects; z++) {
+                        //     if (data.subjects[z].code == data.schedule[0].hour6) {
+                        //         BG = data.subjects[z].bgcolor;
+                        //     }
+                        // }
+                        // elem.css( { "background-color": BG } );
+                        // elem.css({ "grid-row": "span 3" });
+                    }
+
+
+                }
+            });
+
+
+
+
+
+            // var option = {height: '2100', width: '2970', scale: 4}
+            // html2canvas(document.getElementById("timetable"), option).then(function(canvas) {
+            //     document.body.appendChild(canvas);
+            // });
+
+
+        </script>
+
+
+        <script type="text/javascript" src="./html2canvas.min.js"></script>
+        <script>
+            function download() {
+                var link = document.getElementById("link");
+                html2canvas(document.getElementById("timetable"), {width: '2970px', height: '2100px', scale: 4}).then(function(canvas) {
+                    // window.location = canvas.toDataURL('image/jpeg');
+                    document.body.appendChild(canvas);
+                    // var dt = canvas.toDataURL('image/jpeg');
+
+                    // link.href = canvas.toDataURL('image/jpeg');
+                    // console.log(link.href);
+                });
+            };
+
+            var option = {height: '2100', width: '2970', scale: 2}
+            html2canvas(document.getElementById("timetable"), option).then(function(canvas) {
+                document.body.appendChild(canvas);
+                // $(body).find('canvas').hide();
+                $('#timetable').hide();
+            });
+        </script>
+
+    </body>
+
+
+</html>

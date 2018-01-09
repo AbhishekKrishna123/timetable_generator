@@ -1,0 +1,41 @@
+.header {
+  text-align: center;
+  background-color: #FFEB3B;
+  padding: 2em;
+}
+
+.footer {
+  text-align: center;
+  background-color: #FFEB3B;
+  padding: 1em;
+  margin-top: 4em;
+}
+
+.line {
+  height: 2px;
+  width: 10em;
+  background-color: #555;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin-top: 0.5em;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: #777;
+}
+
+.blockColor {
+  height: 1.5em;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  background-color: #FFEB3B;
+}
