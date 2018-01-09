@@ -112,9 +112,9 @@ class App extends Component {
         this.setState({subjects: temp});
     }
 
-    handleLabBGcolor(i, event) {
+    handleLabBGcolor(i, color) {
         var temp = this.state.labs;
-        temp[i].bgcolor = event.target.value;
+        temp[i].bgcolor = color.hex;
         this.setState({labs: temp});
     }
 
@@ -386,17 +386,17 @@ class App extends Component {
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
                                     <TextField
-                                        label="Subject Name"
+                                        label="Full Subject Name"
                                         value={subject.name}
                                         onChange={this.handleSubName.bind(this, i)}
                                         margin="normal"
                                         style={{ width: '100%' }}
-                                        placeholder="full subject name"
+                                        placeholder="full subject name (Ex: Programming in C)"
                                     />
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
                                     <TextField
-                                        label="Subject Code"
+                                        label="Subject Short Name / Acronym"
                                         value={subject.code}
                                         onChange={this.handleSubCode.bind(this, i)}
                                         margin="normal"
@@ -487,13 +487,18 @@ class App extends Component {
                                     />
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
-                                    <TextField
+                                    {/* <TextField
                                         label="Background Colour"
                                         value={lab.bgcolor}
                                         onChange={this.handleLabBGcolor.bind(this, i)}
                                         margin="normal"
                                         style={{ width: '100%' }}
                                         placeholder="hex value (Ex: #33ffcc)"
+                                    /> */}
+                                    <Typography type="body1" style={{ textAlign: 'center'}}>Background Colour</Typography>
+                                    <SliderPicker
+                                        color={ lab.bgcolor }
+                                        onChangeComplete={ this.handleLabBGcolor.bind(this, i) }
                                     />
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
@@ -643,7 +648,7 @@ class App extends Component {
 
                 {/* Footer */}
                 <footer className="footer">
-                    <Typography type="body1" style={{color: 'gray'}}><CodeIcon />  by Abhishek Krishna in 2017 - 2018 | Version 0.2 (10th Jan 2018)</Typography>
+                    <Typography type="body1" style={{color: 'gray'}}><CodeIcon />  by Abhishek Krishna in 2017 - 2018 | Version 0.21 (10th Jan 2018)</Typography>
 
                 </footer>
             </div>
