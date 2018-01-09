@@ -642,13 +642,13 @@ class App extends Component {
 
 
                     <Grid item align="center" xs={12}>
-                        <Button raised color="primary" onClick={this.saveAndSubmit}>Generate timetable!</Button>
+                        <Button raised color="primary" onClick={this.saveAndSubmit}>Save & Generate timetable!</Button>
                     </Grid>
                 </section>
 
                 {/* Footer */}
                 <footer className="footer">
-                    <Typography type="body1" style={{color: 'gray'}}><CodeIcon />  by Abhishek Krishna in 2017 - 2018 | Version 0.21 (10th Jan 2018)</Typography>
+                    <Typography type="body1" style={{color: 'gray'}}><CodeIcon />  by Abhishek Krishna in 2017 - 2018 | Version 0.22 (10th Jan 2018)</Typography>
 
                 </footer>
             </div>
