@@ -639,6 +639,9 @@
                 document.body.appendChild(canvas);
                 // $(body).find('canvas').hide();
                 $('#timetable').hide();
+
+                var img = document.getElementsByTagName("canvas")[0].toDataURL("image/png");
+                document.write('<img src="'+img+'"/>');
             });
         </script>
 

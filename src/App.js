@@ -288,25 +288,29 @@ class App extends Component {
                     <Paper style={{padding: 40, marginTop: 20}}>
                         <Typography type="display1" color="primary" style={{marginBottom: '1em', textAlign: 'center'}}>About</Typography>
                         <Typography type="body1">
-                            Timetable generator allows you to create customized colourful RVCE timetables such as <a style={{color: 'yellow'}} href="./sample.png" >these</a> easily. (Beacuse the plain balck and white ones are horrible)
+                            Timetable generator allows you to create customized colourful RVCE timetables such as <a style={{color: 'yellow'}} href="./sample.png" >these</a> easily. (Beacuse the plain balck and white ones are horrible)<br />
+                            I used to make these timetables manually, but this tool allows anyone to make one with their choice of colours and subjects/electives.<br />
+                            Feedback about any bugs and suggestions for improvements is appreciated.<br />
                         </Typography>
 
-                        <Typography type="headline" color="primary" style={{marginBottom: '1em', textAlign: 'center'}}>How To Use</Typography>
+                        <Typography type="headline" color="primary" style={{marginTop: '2em', marginBottom: '1em', textAlign: 'center'}}>How To Use</Typography>
                         <Typography type="body1">
                             1. Fill in the basic Details <br />
                             2. Enter your subjects <br />
                             3. Enter your labs <br />
                             4. Enter the timetable schedule <br />
-                            5. Generate the timetable and save the image which is shown (right click) <br />
+                            5. Generate the timetable and save the image which is shown (right click) [reloading the page might be necessary sometimes] <bbr />
                             You can go back and press 'Load' to reload the previously entered fields to make changes.<br />
                             The 'Save' button saves the current fields so that you can resume later.
                         </Typography>
                         <br /><br />
-                        {/* <Typography type="headline" color="primary" style={{marginBottom: '1em', textAlign: 'center'}}>Caution</Typography> */}
+                        <Typography type="headline" color="primary" style={{marginBottom: '1em', textAlign: 'center'}}>Notes</Typography>
                         <Typography type="body1">
-                            Timetable generator uses the <i>CSS Grid</i> specification which is supported only by the latest desktop browsers.
+                            <Typography color="primary">Timetable generator uses the <i>CSS Grid</i> specification which is supported only by the latest desktop browsers. (<a style={{color: 'yellow'}} href="https://caniuse.com/#feat=css-grid" >Ref</a>)</Typography>
                             The latest versions of Chrome, Firefox, Safari (MacOS El Capitan) and Edge (Windows 10 Fall Creators Update) support CSS Grid.
                             Your mileage may vary with mobile browsers.
+                            <br /><br />
+                            Stuff which I might improve/add in the future: user interface, better colour picker, better fonts and timetable layout, provide starting templates which can then be modified
                         </Typography>
                     </Paper>
 
@@ -409,7 +413,7 @@ class App extends Component {
                                         style={{ width: '100%' }}
                                         placeholder="hex value (Ex: #33ffcc)"
                                     /> */}
-                                    <Typography type="body1" color="grey" style={{ textAlign: 'center'}}>Background Colour</Typography>
+                                    <Typography type="body1" style={{ textAlign: 'center'}}>Background Colour</Typography>
                                     <SliderPicker
                                         color={ subject.bgcolor }
                                         onChangeComplete={ this.handleSubBGcolor.bind(this, i) }
@@ -639,7 +643,8 @@ class App extends Component {
 
                 {/* Footer */}
                 <footer className="footer">
-                    {/* <Typography type="body1" style={{color: 'gray'}}><CodeIcon />  by Abhishek Krishna in 2018</Typography> */}
+                    <Typography type="body1" style={{color: 'gray'}}><CodeIcon />  by Abhishek Krishna in 2017 - 2018 | Version 0.2 (10th Jan 2018)</Typography>
+
                 </footer>
             </div>
             </MuiThemeProvider>
