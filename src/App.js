@@ -414,7 +414,7 @@ class App extends Component {
                                         placeholder="hex value (Ex: #33ffcc)"
                                     /> */}
                                     <Typography type="body1" style={{ textAlign: 'center'}}>Background Colour</Typography>
-                                    <SliderPicker
+                                    <SketchPicker
                                         color={ subject.bgcolor }
                                         onChangeComplete={ this.handleSubBGcolor.bind(this, i) }
                                     />
@@ -496,7 +496,7 @@ class App extends Component {
                                         placeholder="hex value (Ex: #33ffcc)"
                                     /> */}
                                     <Typography type="body1" style={{ textAlign: 'center'}}>Background Colour</Typography>
-                                    <SliderPicker
+                                    <SketchPicker
                                         color={ lab.bgcolor }
                                         onChangeComplete={ this.handleLabBGcolor.bind(this, i) }
                                     />
