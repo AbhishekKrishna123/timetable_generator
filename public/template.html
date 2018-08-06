@@ -24,7 +24,7 @@
                     <div id="rightHeader">
                         <div>
                             <div id="semester">Semester IV</div>
-                            <div>2017 - 2018</div>
+                            <div id="year">2017 - 2018</div>
                         </div>
                     </div>
                 </div>
@@ -176,6 +176,11 @@
             $("#semester").html("Semester " + data.selectedSemester);
             // Set the section
             $("#section").html(data.selectedSection);
+            // Set the year
+            var str = data.year;
+            str += " - ";
+            str += parseInt(data.year) + 1;
+            $("#year").html(str);
 
             // Add footer
             data.subjects.forEach(subject => {

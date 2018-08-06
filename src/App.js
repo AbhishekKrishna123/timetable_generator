@@ -69,6 +69,7 @@ class App extends Component {
         sections: [
             "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N"
         ],
+        year: "2018",
         selectedSection: "A",
         numSubjects: 2,
         subjects: [
@@ -92,6 +93,11 @@ class App extends Component {
     handleChange = event => {
         this.setState({ [event.target.name]: event.target.value });
     };
+
+    handleYear(event) {
+        var temp = event.target.value;
+        this.setState({year: temp});
+    }
 
     handleSubName(i, event) {
         var temp = this.state.subjects;
@@ -309,6 +315,7 @@ class App extends Component {
                             <Typography color="primary">Timetable generator uses the <i>CSS Grid</i> specification which is supported only by the latest desktop browsers. (<a style={{color: 'yellow'}} href="https://caniuse.com/#feat=css-grid" >Ref</a>)</Typography>
                             The latest versions of Chrome, Firefox, Safari (MacOS El Capitan) and Edge (Windows 10 Fall Creators Update) support CSS Grid.
                             Your mileage may vary with mobile browsers.
+                            <br />NOTE: There is an issue with Edge on Windows 10 April 2018 Update. Use Chrome/Firefox.
                             <br /><br />
                             Stuff which I might improve/add in the future: user interface, better colour picker, better fonts and timetable layout, provide starting templates which can then be modified
                         </Typography>
@@ -370,6 +377,22 @@ class App extends Component {
                                         }
                                     </Select>
                                 </FormControl>
+                            </Grid>
+
+                            <Grid item xs={6}>
+                                <TextField
+                                    label="Current Acedemic Year"
+                                    value={this.state.year}
+                                    onChange={this.handleYear.bind(this)}
+                                    margin="normal"
+                                    style={{ width: '100%' }}
+                                    placeholder="Current Academic year"
+                                />
+                                {/* <p style={{ color: '#fff' }}>{parseInt(this.state.year) + 1}</p> */}
+                            </Grid>
+                            <Grid item xs={6}>
+                                <p style={{ color: '#fff', 'font-size': '0.75rem'  }}>Academic Year</p>
+                                <p style={{ color: '#fff' }}>{this.state.year} - {parseInt(this.state.year) + 1}</p>
                             </Grid>
                         </Grid>
                     </Paper>
@@ -648,7 +671,7 @@ class App extends Component {
 
                 {/* Footer */}
                 <footer className="footer">
-                    <Typography type="body1" style={{color: 'gray'}}><CodeIcon />  by Abhishek Krishna in 2017 - 2018 | Version 0.23 (6th August 2018)</Typography>
+                    <Typography type="body1" style={{color: 'gray'}}><CodeIcon />  by Abhishek Krishna in 2017 - 2018 | Version 0.24 (6th August 2018)</Typography>
 
                 </footer>
             </div>
