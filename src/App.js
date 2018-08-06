@@ -648,7 +648,7 @@ class App extends Component {
 
                 {/* Footer */}
                 <footer className="footer">
-                    <Typography type="body1" style={{color: 'gray'}}><CodeIcon />  by Abhishek Krishna in 2017 - 2018 | Version 0.22 (10th Jan 2018)</Typography>
+                    <Typography type="body1" style={{color: 'gray'}}><CodeIcon />  by Abhishek Krishna in 2017 - 2018 | Version 0.23 (6th August 2018)</Typography>
 
                 </footer>
             </div>
