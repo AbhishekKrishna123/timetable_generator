@@ -44,7 +44,7 @@ html, body {
     grid-template-rows: 1fr;
     align-items: center;
     text-align: center;
-    font-family: "calibri";
+    font-family: "Roboto";
     font-size: 100px;
     text-transform: uppercase;
     font-weight: bold;
@@ -297,7 +297,7 @@ html, body {
     font-size: 30px;
     font-weight: bold;
     display: inline-block;
-    width: 15%;
+    width: 20%;
     padding-right: 20px;
     color: #444;
 }

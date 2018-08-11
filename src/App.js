@@ -60,6 +60,7 @@ class App extends Component {
             "Department of Industrial Engineering and Management",
             "Department of Information Science and Engineering",
             "Department of Mechanical Engineering",
+            "Department of Telecommunication Engineering",
         ],
         selectedDepartment: "none",
         semesters: [
