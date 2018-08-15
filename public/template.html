@@ -258,6 +258,10 @@
 
                                     // The lab for the day is done
                                     labDone = true;
+                                    // But if there is more than 1 lab on the same day, undo
+                                    if (day.hour3.substr(0, 3) == "lab" || day.hour5.substr(0, 3) == "lab") {
+                                        labDone = false;
+                                    }
                                 }
                             });
                             // Skip the next lab slot
@@ -382,6 +386,10 @@
 
                                     // The lab for the day is done
                                     labDone = true;
+                                    // But if there is more than 1 lab on the same day, undo
+                                    if (day.hour5.substr(0, 3) == "lab") {
+                                        labDone = false;
+                                    }
                                 }
                             });
                             // Skip the next lab slot
